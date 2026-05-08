@@ -24,7 +24,7 @@ namespace EWTA2
 
         protected void btnEmployeeWizard_Click(object sender, EventArgs e)
         {
-            Response.Write("Employee Wizard Form page not created yet.");
+            Response.Redirect("~/FormPages/EmployeeDataEntryWizard.aspx");
         }
 
         protected void btnWageEntry_Click(object sender, EventArgs e)

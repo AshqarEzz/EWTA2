@@ -25,19 +25,24 @@
                 <asp:BoundField DataField="Dept_Phone" HeaderText="Dept_Phone" />
 
                 <asp:TemplateField HeaderText="Empl_Name">
+
                     <ItemTemplate>
                         <%# Eval("Empl_Name") %>
                     </ItemTemplate>
 
                     <EditItemTemplate>
+
                         <asp:DropDownList ID="ddlManagerEdit" runat="server"
                             DataSourceID="dsManagers"
                             DataTextField="Empl_Name"
                             DataValueField="Empl_ID"
                             SelectedValue='<%# Bind("Manager_ID") %>'>
                         </asp:DropDownList>
+
                     </EditItemTemplate>
+
                 </asp:TemplateField>
+
             </Columns>
 
         </asp:GridView>
@@ -55,6 +60,7 @@
                     </div>
                 </div>
 
+
                 <div class="row mb-2">
                     <div class="col-md-4">
                         <asp:Label ID="lblDeptPhone" runat="server" Text="Dept Phone:"></asp:Label>
@@ -63,6 +69,7 @@
                         <asp:TextBox ID="txtDeptPhone" runat="server"></asp:TextBox>
                     </div>
                 </div>
+
 
                 <div class="row mb-2">
                     <div class="col-md-4">

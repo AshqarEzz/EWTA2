@@ -24,6 +24,15 @@ namespace EWTA2
         protected global::System.Web.UI.WebControls.Button btnEmployeesByDepartment;
 
         /// <summary>
+        /// btnEmployeeWageGraph control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEmployeeWageGraph;
+
+        /// <summary>
         /// btnEmployeeWageGraphByYear control.
         /// </summary>
         /// <remarks>
@@ -31,41 +40,5 @@ namespace EWTA2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEmployeeWageGraphByYear;
-
-        /// <summary>
-        /// btnWageGraphByEmployee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnWageGraphByEmployee;
-
-        /// <summary>
-        /// btnWagesByEmployee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnWagesByEmployee;
-
-        /// <summary>
-        /// btnEmployeeCommunication control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEmployeeCommunication;
-
-        /// <summary>
-        /// btnEmployeeResign control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEmployeeResign;
     }
 }

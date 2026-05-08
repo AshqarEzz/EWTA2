@@ -11,6 +11,7 @@
         <div class="row mb-4">
 
             <div class="col-md-6 text-center">
+
                 <asp:Button ID="btnEmployeesByDepartment" runat="server"
                     Text="Employees By Department Report"
                     CssClass="btn btn-light border w-50 mb-4 fw-bold"
@@ -18,38 +19,15 @@
 
                 <br />
 
-                <asp:Button ID="btnEmployeeWageGraphByYear" runat="server"
-                    Text="Employee Wage Graph By Year"
-                    CssClass="btn btn-light border w-50 mb-4 fw-bold"
-                    OnClick="btnEmployeeWageGraphByYear_Click" />
-
-                <br />
-
-                <asp:Button ID="btnWageGraphByEmployee" runat="server"
+                <asp:Button ID="btnEmployeeWageGraph" runat="server"
                     Text="Wage Graph By Employee"
                     CssClass="btn btn-light border w-50 mb-4 fw-bold"
-                    OnClick="btnWageGraphByEmployee_Click" />
-            </div>
-
-            <div class="col-md-6 text-center">
-                <asp:Button ID="btnWagesByEmployee" runat="server"
-                    Text="Wages By Employee Report"
-                    CssClass="btn btn-light border w-50 mb-4 fw-bold"
-                    OnClick="btnWagesByEmployee_Click" />
+                    OnClick="btnEmployeeWageGraph_Click" />
 
                 <br />
 
-                <asp:Button ID="btnEmployeeCommunication" runat="server"
-                    Text="Employee Communication Report"
-                    CssClass="btn btn-light border w-50 mb-4 fw-bold"
-                    OnClick="btnEmployeeCommunication_Click" />
+                <asp:Button ID="btnEmployeeWageGraphByYear" runat="server" CssClass="btn btn-light border w-50 mb-4 fw-bold"  Text="Employee Wage Graph by Year" OnClick="btnEmployeeWageGraphByYear_Click" />
 
-                <br />
-
-                <asp:Button ID="btnEmployeeResign" runat="server"
-                    Text="Employee Resign Report"
-                    CssClass="btn btn-light border w-50 mb-4 fw-bold"
-                    OnClick="btnEmployeeResign_Click" />
             </div>
 
         </div>

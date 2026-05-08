@@ -50,6 +50,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -127,9 +128,12 @@
     <Content Include="FormPages\EmployeeDataUpdate.aspx" />
     <Content Include="FormPages\WageDataUpdate.aspx" />
     <Content Include="FormPages\DepartmentDataEntryUpdate.aspx" />
+    <Content Include="FormPages\EmployeeDataEntryWizard.aspx" />
     <Content Include="Forms.aspx" />
     <Content Include="Global.asax" />
     <Content Include="ReportPages\EmployeesByDepartmentReport.aspx" />
+    <Content Include="ReportPages\EmployeeWageGraph.aspx" />
+    <Content Include="ReportPages\EmployeeWageGraphByYear.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -265,6 +269,13 @@
     <Compile Include="FormPages\DepartmentDataEntryUpdate.aspx.designer.cs">
       <DependentUpon>DepartmentDataEntryUpdate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FormPages\EmployeeDataEntryWizard.aspx.cs">
+      <DependentUpon>EmployeeDataEntryWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormPages\EmployeeDataEntryWizard.aspx.designer.cs">
+      <DependentUpon>EmployeeDataEntryWizard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Forms.aspx.cs">
       <DependentUpon>Forms.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -282,6 +293,20 @@
     </Compile>
     <Compile Include="ReportPages\EmployeesByDepartmentReport.aspx.designer.cs">
       <DependentUpon>EmployeesByDepartmentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeWageGraph.aspx.cs">
+      <DependentUpon>EmployeeWageGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeWageGraph.aspx.designer.cs">
+      <DependentUpon>EmployeeWageGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeWageGraphByYear.aspx.cs">
+      <DependentUpon>EmployeeWageGraphByYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeWageGraphByYear.aspx.designer.cs">
+      <DependentUpon>EmployeeWageGraphByYear.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

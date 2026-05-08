@@ -15,13 +15,14 @@
             CssClass="table table-bordered"
             AutoGenerateEditButton="True">
 
-            <Columns> 
-                <asp:BoundField DataField="Wage_ID" HeaderText="Wage_ID" ReadOnly="True" />
-                <asp:BoundField DataField="Wage_Date" HeaderText="Wage_Date" />
-                <asp:BoundField DataField="Wage_Amount" HeaderText="Wage_Amount" />
-                <asp:BoundField DataField="Wage_Commission" HeaderText="Wage_Commission" />
-                <asp:BoundField DataField="Month_ID" HeaderText="Month_ID" />
-            </Columns>
+            <Columns>
+    <asp:BoundField DataField="Wage_ID" HeaderText="Wage_ID" ReadOnly="True" />
+    <asp:BoundField DataField="Empl_Name" HeaderText="Employee Name" ReadOnly="True" />
+    <asp:BoundField DataField="Wage_Date" HeaderText="Wage_Date" />
+    <asp:BoundField DataField="Wage_Amount" HeaderText="Wage_Amount" />
+    <asp:BoundField DataField="Wage_Commission" HeaderText="Wage_Commission" />
+    <asp:BoundField DataField="Month_ID" HeaderText="Month_ID" />
+</Columns>
 
         </asp:GridView>
 
@@ -34,9 +35,17 @@
         ConnectionString="<%$ ConnectionStrings:EWTAConnection %>"
 
         SelectCommand="
-            SELECT Wage_ID, Wage_Date, Wage_Amount, Wage_Commission, Month_ID
-            FROM dbo.tbl_Wages
-            ORDER BY Wage_ID"
+    SELECT 
+        w.Wage_ID,
+        e.Empl_Name,
+        w.Wage_Date,
+        w.Wage_Amount,
+        w.Wage_Commission,
+        w.Month_ID
+    FROM dbo.tbl_Wages w
+    INNER JOIN dbo.tbl_Employees e
+        ON w.Empl_ID = e.Empl_ID
+    ORDER BY w.Wage_ID"
 
         UpdateCommand="
             UPDATE dbo.tbl_Wages
