@@ -27,5 +27,22 @@ namespace EWTA2
         {
             Response.Redirect("~/ReportPages/EmployeeWageGraphByYear.aspx");
         }
+
+        protected void btnWagesByEmployee_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ReportPages/WagesByEmployeeReport.aspx");
+        }
+
+        protected void btnEmployeeCommunication_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ReportPages/EmployeeCommunicationReport.aspx");
+        }
+
+        protected void btnEmployeeResign_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ReportPages/EmployeeResignReport.aspx");
+        }
+
+
     }
 }

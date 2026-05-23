@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="text-center">
-        <img src="~/Pictures/Personeller.jpg" runat="server" alt="Employees" style="width:600px; max-width:100%; height:auto;" />
+        <img src="~/Pictures/Employees.png" runat="server" alt="Employees" style="width:600px; max-width:100%; height:auto;" />
         
         <h1 style="margin-top:30px; font-weight:bold;">
             Employee Wages Tracking Application (EWTA)

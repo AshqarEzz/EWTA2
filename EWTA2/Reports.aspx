@@ -30,6 +30,31 @@
 
             </div>
 
+            <div class="col-md-6 text-center">
+
+
+      <asp:Button ID="btnWagesByEmployee" runat="server"
+    Text="Wages By Employee Report"
+    CssClass="btn btn-light border w-50 mb-4 fw-bold"
+    OnClick="btnWagesByEmployee_Click" />
+
+        <br />
+          
+<asp:Button ID="btnEmployeeCommunication" runat="server"
+    Text="Employee Communication Report"
+    CssClass="btn btn-light border w-50 mb-4 fw-bold"
+    OnClick="btnEmployeeCommunication_Click" />
+
+   <br />
+
+<asp:Button ID="btnEmployeeResign" runat="server"
+    Text="Employee Resign Report"
+    CssClass="btn btn-light border w-50 mb-4 fw-bold"
+    OnClick="btnEmployeeResign_Click" />
+
+
+       </div>
+
         </div>
 
     </div>

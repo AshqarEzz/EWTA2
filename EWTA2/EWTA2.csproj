@@ -131,9 +131,13 @@
     <Content Include="FormPages\EmployeeDataEntryWizard.aspx" />
     <Content Include="Forms.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Pictures\Employees.png" />
     <Content Include="ReportPages\EmployeesByDepartmentReport.aspx" />
     <Content Include="ReportPages\EmployeeWageGraph.aspx" />
     <Content Include="ReportPages\EmployeeWageGraphByYear.aspx" />
+    <Content Include="ReportPages\WagesByEmployeeReport.aspx" />
+    <Content Include="ReportPages\EmployeeCommunicationReport.aspx" />
+    <Content Include="ReportPages\EmployeeResignReport.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -163,6 +167,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Reports.aspx" />
+    <Content Include="Help.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -308,6 +313,27 @@
     <Compile Include="ReportPages\EmployeeWageGraphByYear.aspx.designer.cs">
       <DependentUpon>EmployeeWageGraphByYear.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ReportPages\WagesByEmployeeReport.aspx.cs">
+      <DependentUpon>WagesByEmployeeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\WagesByEmployeeReport.aspx.designer.cs">
+      <DependentUpon>WagesByEmployeeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeCommunicationReport.aspx.cs">
+      <DependentUpon>EmployeeCommunicationReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeCommunicationReport.aspx.designer.cs">
+      <DependentUpon>EmployeeCommunicationReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeResignReport.aspx.cs">
+      <DependentUpon>EmployeeResignReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\EmployeeResignReport.aspx.designer.cs">
+      <DependentUpon>EmployeeResignReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -336,9 +362,17 @@
     <Compile Include="Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="CVFiles\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

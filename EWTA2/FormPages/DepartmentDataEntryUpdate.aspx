@@ -79,7 +79,9 @@
                         <asp:DropDownList ID="ddlManager" runat="server"
                             DataSourceID="dsManagers"
                             DataTextField="Empl_Name"
-                            DataValueField="Empl_ID">
+                            DataValueField="Empl_ID"
+                            AppendDataBoundItems="true">
+                            <asp:ListItem Text="Select Employee" Value=""></asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
@@ -155,10 +157,7 @@
 
     <asp:SqlDataSource ID="dsManagers" runat="server"
         ConnectionString="<%$ ConnectionStrings:EWTAConnection %>"
-        SelectCommand="
-            SELECT Empl_ID, Empl_Name
-            FROM dbo.tbl_Employees
-            ORDER BY Empl_Name">
+        SelectCommand="SELECT Empl_ID, Empl_Name, Is_Empl_Manager FROM tbl_Employees WHERE (Is_Empl_Manager = 1) ORDER BY Empl_Name">
     </asp:SqlDataSource>
 
 </asp:Content>

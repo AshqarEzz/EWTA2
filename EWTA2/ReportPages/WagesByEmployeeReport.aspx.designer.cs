@@ -7,65 +7,56 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EWTA2
+namespace EWTA2.ReportPages
 {
 
 
-    public partial class ReportsPage
+    public partial class WagesByEmployeeReport
     {
 
         /// <summary>
-        /// btnEmployeesByDepartment control.
+        /// ddlEmployee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEmployeesByDepartment;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEmployee;
 
         /// <summary>
-        /// btnEmployeeWageGraph control.
+        /// gvWages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEmployeeWageGraph;
+        protected global::System.Web.UI.WebControls.GridView gvWages;
 
         /// <summary>
-        /// btnEmployeeWageGraphByYear control.
+        /// btnCloseReport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEmployeeWageGraphByYear;
+        protected global::System.Web.UI.WebControls.Button btnCloseReport;
 
         /// <summary>
-        /// btnWagesByEmployee control.
+        /// dsEmployees control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnWagesByEmployee;
+        protected global::System.Web.UI.WebControls.SqlDataSource dsEmployees;
 
         /// <summary>
-        /// btnEmployeeCommunication control.
+        /// dsWages control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEmployeeCommunication;
-
-        /// <summary>
-        /// btnEmployeeResign control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEmployeeResign;
+        protected global::System.Web.UI.WebControls.SqlDataSource dsWages;
     }
 }

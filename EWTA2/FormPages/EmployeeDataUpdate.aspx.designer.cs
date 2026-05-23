@@ -33,6 +33,15 @@ namespace EWTA2.FormPages
         protected global::System.Web.UI.WebControls.DetailsView dvEmployee;
 
         /// <summary>
+        /// lblCVMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCVMessage;
+
+        /// <summary>
         /// btnCloseForm control.
         /// </summary>
         /// <remarks>

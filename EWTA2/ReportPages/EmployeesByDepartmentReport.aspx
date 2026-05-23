@@ -21,7 +21,9 @@
                     AutoPostBack="true"
                     DataSourceID="dsDepartments"
                     DataTextField="Dept_Name"                
-                    DataValueField="Dept_ID">
+                    DataValueField="Dept_ID"
+                    AppendDataBoundItems="true">
+                    <asp:ListItem Text="Select Department" Value=""></asp:ListItem>
                 </asp:DropDownList>
             </div>
         </div>

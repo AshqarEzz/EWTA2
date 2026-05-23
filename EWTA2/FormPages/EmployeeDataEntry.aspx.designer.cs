@@ -159,6 +159,24 @@ namespace EWTA2.FormPages
         protected global::System.Web.UI.WebControls.TextBox txtCVInfo;
 
         /// <summary>
+        /// lblCVFile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCVFile;
+
+        /// <summary>
+        /// fuCVFile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fuCVFile;
+
+        /// <summary>
         /// lblLastName control.
         /// </summary>
         /// <remarks>

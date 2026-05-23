@@ -20,6 +20,23 @@ namespace EWTA2.FormPages
                 lblMessage.Text = "First Name and Last Name are required.";
                 return;
             }
+
+            string cvFileName = null;
+
+            if (fuCVFile.HasFile)
+            {
+                string folderPath = Server.MapPath("~/CVFiles/");
+
+                if (!System.IO.Directory.Exists(folderPath))
+                {
+                    System.IO.Directory.CreateDirectory(folderPath);
+                }
+
+                cvFileName = DateTime.Now.Ticks + "_" + fuCVFile.FileName;
+                fuCVFile.SaveAs(System.IO.Path.Combine(folderPath, cvFileName));
+            }
+
+            dsEmployees.InsertParameters["Empl_CV_File"].DefaultValue = cvFileName;
             //we are passing values to SQl datasource
             //dsEmployee is our SQlDataSource defined in .aspx
             dsEmployees.InsertParameters["Empl_FName"].DefaultValue = txtFirstName.Text.Trim();

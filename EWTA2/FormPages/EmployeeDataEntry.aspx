@@ -98,6 +98,15 @@
                 </div>
             </div>
 
+            <div class="row mb-2">
+    <div class="col-md-4">
+        <asp:Label ID="lblCVFile" runat="server" Text="Upload CV:"></asp:Label>
+    </div>
+    <div class="col-md-8">
+        <asp:FileUpload ID="fuCVFile" runat="server" CssClass="form-control" />
+    </div>
+</div>
+
         </div>
 
         <!-- RIGHT COLUMN -->
@@ -263,17 +272,17 @@
     ConnectionString="<%$ ConnectionStrings:EWTAConnection %>"
     InsertCommand="
     INSERT INTO dbo.tbl_Employees
-    (Empl_FName, Empl_LName, Empl_BDate, Empl_Start_Date, Empl_Left_Date, Empl_Left_Reason,
-     Empl_Address, Empl_City, Empl_Province, Empl_Phone, Empl_Cell,
-     Dept_ID, Gender_ID, Title_ID,
-     Empl_Wage, Empl_Commission_Rate, Empl_Email,
-     Is_Empl_Manager, Is_Empl_Active, Empl_CV)
-    VALUES
-    (@Empl_FName, @Empl_LName, @Empl_BDate, @Empl_Start_Date, @Empl_Left_Date, @Empl_Left_Reason,
-     @Empl_Address, @Empl_City, @Empl_Province, @Empl_Phone, @Empl_Cell,
-     @Dept_ID, @Gender_ID, @Title_ID,
-     @Empl_Wage, @Empl_Commission_Rate, @Empl_Email,
-     @Is_Empl_Manager, @Is_Empl_Active, @Empl_CV)">
+(Empl_FName, Empl_LName, Empl_BDate, Empl_Start_Date, Empl_Left_Date, Empl_Left_Reason,
+ Empl_Address, Empl_City, Empl_Province, Empl_Phone, Empl_Cell,
+ Dept_ID, Gender_ID, Title_ID,
+ Empl_Wage, Empl_Commission_Rate, Empl_Email,
+ Is_Empl_Manager, Is_Empl_Active, Empl_CV, Empl_CV_File)
+VALUES
+(@Empl_FName, @Empl_LName, @Empl_BDate, @Empl_Start_Date, @Empl_Left_Date, @Empl_Left_Reason,
+ @Empl_Address, @Empl_City, @Empl_Province, @Empl_Phone, @Empl_Cell,
+ @Dept_ID, @Gender_ID, @Title_ID,
+ @Empl_Wage, @Empl_Commission_Rate, @Empl_Email,
+ @Is_Empl_Manager, @Is_Empl_Active, @Empl_CV, @Empl_CV_File)">
 
     <InsertParameters>
         <asp:Parameter Name="Empl_FName" />
@@ -296,6 +305,7 @@
         <asp:Parameter Name="Is_Empl_Manager" />
         <asp:Parameter Name="Is_Empl_Active" />
         <asp:Parameter Name="Empl_CV" />
+        <asp:Parameter Name="Empl_CV_File" />
     </InsertParameters>
 </asp:SqlDataSource>
 
